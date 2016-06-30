@@ -68,7 +68,7 @@ storiesOf('Page', module)
       </p>
     </Page>
   ), { inline: true })
-  .addWithInfo('Width(full)', 'Page with full width width styles', () => (
+  .addWithInfo('Width(full)', 'Page with full width styles', () => (
     <Page title="Full Width Page" width="full">
       <p>
         Now, this is a story all about how
