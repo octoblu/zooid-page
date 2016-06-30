@@ -16,14 +16,14 @@ describe('<Page />', () => {
   describe('when given a title as prop', () => {
     it('should render the title', () => {
       const sut = shallow(<Page title="Alicia Keys" />)
-      expect(sut).to.contain(<Heading level={4}>Alicia Keys</Heading>)
+      expect(sut).to.contain(<Heading level={3}>Alicia Keys</Heading>)
     })
   })
 
   describe('when loading prop is truthy', () => {
     it('should display a spinner', () => {
       const sut = shallow(<Page loading />)
-      expect(sut).to.contain(<Spinner size="large" />)
+      expect(sut).to.contain(<Spinner size="large" className={styles.spinner} />)
     })
   })
 
