@@ -27,5 +27,5 @@
 
 .spinner {
   flex: 1;
-  margin: 36px;
+  margin: 36px auto;
 }
