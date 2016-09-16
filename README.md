@@ -1,9 +1,12 @@
 # zooid-page
 
 [![Build Status](https://travis-ci.org/octoblu/zooid-page.svg?branch=master)](https://travis-ci.org/octoblu/zooid-page)
-[![npm version](https://badge.fury.io/js/zooid-page.svg)](http://badge.fury.io/js/zooid-page)
-[![Code Climate](https://codeclimate.com/github/octoblu/zooid-page.png)](https://codeclimate.com/github/octoblu/zooid-page)
+[![Test Coverage](https://codecov.io/gh/octoblu/zooid-page/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/zooid-page)
+[![Dependency status](http://img.shields.io/david/octoblu/zooid-page.svg?style=flat)](https://david-dm.org/octoblu/zooid-page)
+[![devDependency Status](http://img.shields.io/david/dev/octoblu/zooid-page.svg?style=flat)](https://david-dm.org/octoblu/zooid-page#info=devDependencies)
 [![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
+
+[![NPM](https://nodei.co/npm/zooid-page.svg?style=flat)](https://npmjs.org/package/zooid-page)
 
 ## Install
 ```
