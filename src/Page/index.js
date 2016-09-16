@@ -10,7 +10,7 @@ const widthEnum = ['small', 'medium', 'large', 'full']
 const propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  error: PropTypes.string,
+  error: PropTypes.object,
   loading: PropTypes.bool,
   width: PropTypes.oneOf(['small', 'medium', 'large', 'full']),
   title: PropTypes.string,
@@ -21,8 +21,6 @@ const defaultProps = {
 }
 
 const Page = ({ children, className, error, loading, width, title }) => {
-  const errorMessage = isError(error) ? error.message : error
-
   let pageWidth = width
   if (widthEnum.indexOf(width) < 0) pageWidth = 'small'
 
@@ -32,7 +30,7 @@ const Page = ({ children, className, error, loading, width, title }) => {
     <div className={classes}>
       {title && <Heading level={3}>{title}</Heading>}
       {loading && <Spinner size="large" className={styles.spinner} />}
-      {error && <div>Error: {errorMessage}</div>}
+      {error && <div>Error: {error.message}</div>}
 
       {children}
     </div>

@@ -21,9 +21,6 @@ storiesOf('Page', module)
   .addWithInfo('Error(Object)', 'Page with an error object passed in', () => (
     <Page error={new Error('Oh no!')} />
   ), { inline: true })
-  .addWithInfo('Error(String)', 'Page with an error string passed in', () => (
-    <Page error="String of Errors!" />
-  ), { inline: true })
   .addWithInfo('Title', 'Page with title', () => (
     <Page title="Fresh Prince Of Bel-Air (Theme Song)">
       <p>

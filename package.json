@@ -1,6 +1,6 @@
 {
   "name": "zooid-page",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Page",
   "main": "dist/bundle.js",
   "scripts": {
