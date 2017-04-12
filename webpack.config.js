@@ -4,25 +4,18 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var plugins = [
   // new ExtractTextPlugin('bundle.css', { allChunks: true }),
-  new webpack.NoErrorsPlugin(),
-  new webpack.optimize.OccurenceOrderPlugin(),
+  new webpack.NoEmitOnErrorsPlugin(),
   new webpack.DefinePlugin({
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
-    }
-  }),
-  new webpack.optimize.UglifyJsPlugin({
-    compressor: {
-      screw_ie8: true,
-      warnings: false
     }
   })
 ]
 
 module.exports = {
-  devtool: 'cheap-source-map',
+  devtool: 'source-map',
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['.js']
   },
   entry: [ './src/index' ],
   output: {
@@ -49,7 +42,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader',
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
         exclude: /node_modules/
       }
     ]

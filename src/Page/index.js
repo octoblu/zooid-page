@@ -1,6 +1,6 @@
 import classNames from 'classnames'
-import React, { PropTypes } from 'react'
-import isError from 'lodash.iserror'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Heading from 'zooid-heading'
 import Spinner from 'zooid-spinner'
 
@@ -17,6 +17,11 @@ const propTypes = {
 }
 
 const defaultProps = {
+  children: null,
+  className: '',
+  error: null,
+  loading: false,
+  title: null,
   width: 'small',
 }
 
